@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Chanwoo Park</title>
+<style>
+ body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+   background-color: #f4f4f4;
+   display: flex;
+   flex-direction: row;
+   min-height: 100vh;
+   align-items: stretch;
+  }
+  .sidebarContainer {
+    background-color: #ffffff;
+    color: #111111;
+    width: 275px;
+    padding: 0px;
+    box-shadow: -5px 0 #00aa99 inset;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+  }
+  .sidebar {
+  	flex: 1;
+    background-color: #88ffdd;
+    color: #111111;
+    width: 220px;
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .sidebar img{
+    color: #111111;
+    width: 150px;
+    height:150px;
+    text-align: center;
+  }
+  .sidebar h1{
+  	font-weight:bold;
+  	font-size: 24px;
+    margin:0;
+  }
+  .sidebar h2{
+  font-weight:normal;
+  	min-width:220px;
+    font-size: 16px;
+    margin:0;
+  }
+  .contentContainer{
+  	flex: 1;
+  	display: flex;
+    flex-direction: column;
+  }
+  .content {
+  	flex: 1;
+	padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    background:#eeeeee;
+    
+            
+  }
+  .content .block {
+  	padding:40px 30px;
+  }
+  .content .block h1{
+  	font-weight:bold;
+  	font-size: 24px;
+    color:#003322;
+    margin:10px 0;
+  }
+  .content .block h2{
+  	font-weight:normal;
+  	font-size: 16px;
+    color:#111111;
+    margin:10px 0;
+  }
+  .content .line{
+  margin:0;
+  height:5px;
+ 	background-color: #00aa99;
+  }
+  .footer{
+  	background:#00aa99;
+    height:160px;
+  }
+  
+</style>
+</head>
+<body>
+
+<div class="sidebarContainer">
+<div class="sidebar">
+<img>
+<h1>Chanwoo Park</h1>
+<h2>Daegu Gyeongbuk Institute of Science & Technology,<br/>
+Electrical Engineering & Computer Science,<br/>
+Integrated MS & Ph.D Course
+</h2>
+<h2>bcw6622@dgist.ac.kr
+</h2>
+</div>
+</div>
+<div class="contentContainer">
+<div class="content">
+<div class="block">
+<h1> About </h1>
+<h2> </h2>
+</div>
+<div class="line"></div>
+<div class="block">
+<h1> Affiliation </h1>
+<h2> </h2>
+</div>
+<div class="line"></div>
+<div class="block">
+<h1> Publications </h1>
+<h2> </h2>
+</div>
+</div>
+<div class="footer"></div>
+</div>
+</body>
+</html>
