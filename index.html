@@ -22,7 +22,7 @@
   .sidebarContainer {
     background-color: #ffffff;
     color: #111111;
-    width: 275px;
+    width: 30px;
     padding: 0px;
     box-shadow: -5px 0 #00aa99 inset;
 
@@ -35,31 +35,15 @@
   	flex: 1;
     background-color: #88ffdd;
     color: #111111;
-    width: 220px;
-    padding:20px;
+    width: 20px;
+    padding:0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
   }
-  .sidebar img{
-    color: #111111;
-    width: 150px;
-    height:150px;
-    text-align: center;
-  }
-  .sidebar h1{
-  	font-weight:bold;
-  	font-size: 28px;
-    margin:0;
-  }
-  .sidebar h2{
-  font-weight:normal;
-  	min-width:220px;
-    font-size: 20px;
-    margin:0;
-  }
+  
   .contentContainer{
   	flex: 1;
   	display: flex;
@@ -78,25 +62,45 @@
     scrollbar-width: none;
             
   }
+  
+  
+  
   .content::-webkit-scrollbar{
   display:none;
   }
   .content .block {
   	padding:40px 30px;
   }
+  
+  .content .block .imgContainer{
+    display: flex;
+    flex-direction: row;
+	justify-content: center;
+    text-align: center;
+	margin:30px 0;
+  }
+  
+  
   .content .block h1{
+  	font-weight:bold;
+  	font-size: 32px;
+    color:#003322;
+    margin:0 0 25px 0;
+  }
+  
+  .content .block h2{
   	font-weight:bold;
   	font-size: 28px;
     color:#003322;
     margin:15px 0;
   }
-  .content .block h2{
+  .content .block h3{
   	font-weight:normal;
   	font-size: 20px;
     color:#111111;
     margin: 10px 0;
   }
-  .content .block h3{
+  .content .block h4{
   	font-weight:normal;
   	font-size: 14px;
     color:#111111;
@@ -110,7 +114,24 @@
   }
   .footer{
   	background:#00aa99;
-    height:130px;
+	display: flex;
+    flex-direction: column;
+	justify-content: flex-start;
+	align-items:flex-start;
+	padding: 15px 50px;
+    height:100px;
+  }
+  .footer h2{
+  	font-weight:bold;
+  	font-size: 28px;
+    color:#003322;
+    margin:5px 0px;
+  }
+  .footer h3{
+  	font-weight:normal;
+  	font-size: 20px;
+    color:#111111;
+	margin:5px 0px;
   }
   
 </style>
@@ -119,43 +140,51 @@
 
 <div class="sidebarContainer">
 <div class="sidebar">
-<img src="img/face.png">
-<h1>Chanwoo Park</h1>
 
-<h2>bcw6622@dgist.ac.kr
-</h2>
 </div>
 </div>
 <div class="contentContainer">
 <div class="content">
 <div class="block">
-<h1> About </h1>
 
-<h2>Hello, I am Chanwoo Park, a DGIST integrated master's and doctoral program student. I am working with Prof. Jean Y. Song's lab.</h2>
-<h2>My main research field is crowdsourcing, and I am also studying on deep learning. I am researching how to technically improve the crowdsourcing procedure.</h2>
+<h1>Chanwoo Park's Page</h1>
+
+<h2> About </h2>
+<div class="imgContainer">
+<img src="img/face.png" style="width:250px;height:250px;">
+</div>
+<h3>Hello, I am Chanwoo Park, a DGIST integrated master's and doctoral program student. I am working with Prof. Jean Y. Song's lab.</h3>
+<h3>My main research field is crowdsourcing, and I am also studying on deep learning. I am researching how to technically improve the crowdsourcing procedure.</h3>
 
 </div>
 <div class="line"></div>
 <div class="block">
-<h1> Affiliation </h1>
-<h2>Daegu Gyeongbuk Institute of Science & Technology,</h2>
-<h2>Electrical Engineering & Computer Science,</h2>
-<h2>Integrated MS & Ph.D Course</h2>
+
+<h2> Affiliation </h2>
+<div class="imgContainer">
+<img src="img/dgist.jpg" style="width:400px;height:300px;">
+</div>
+<h3>Daegu Gyeongbuk Institute of Science & Technology, Electrical Engineering & Computer Science, Integrated MS & Ph.D Course
+</h3>
+<h3>Prof. Jean Y. Song's lab. (DIAG) </h3>
 
 </div>
 <div class="line"></div>
 <div class="block">
-<h1> Publications </h1>
-<h2> 
+<h2> Publications </h2>
+<h3> 
 Exploring Intervention Techiques to Alleviate Negative Emotions during Video Content Moderation Tasks as a Worker-centered Task Design
-</h2>
-<h3>DIS'24</h3>
+</h3>
+<h4>DIS'24</h4>
 
-<h3>Dokyun Lee, Sangeun Seo, <u>Chanwoo Park</u>, Sunjun Kim, Buru Chang, and Jean Y. Song</h3>
+<h4>Dokyun Lee, Sangeun Seo, <u>Chanwoo Park</u>, Sunjun Kim, Buru Chang, and Jean Y. Song</h4>
 
 </div>
 </div>
-<div class="footer"></div>
+<div class="footer">
+<h2> Contect </h2>
+<h3> bcw6622@dgist.ac.kr </h3>
+</div>
 </div>
 </body>
 </html>
