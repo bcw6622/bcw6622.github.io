@@ -219,7 +219,7 @@ function ready() {
 			for (let i = 0; i < btn2.length; i++){
 				console.log(target, btn2[i])
 				if (target==btn2[i]){
-					 document.querySelector('.content').scrollTo({left:0, top:btngo[i].offsetTop - 10})
+					 document.querySelector('.content').scrollTo({left:0, top:btngo[i].offsetTop - 10, behavior:"smooth"})
 					console.log("ok")
 					break
 				}
