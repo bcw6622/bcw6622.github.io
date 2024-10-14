@@ -9,6 +9,11 @@
     src: url('fonts/GodoM.otf'),
    
 }
+@font-face {
+    font-family: 'NotoEmoji';
+    src: url('fonts/NotoEmoji-VariableFont_wght.ttf'),
+}
+
  body {
    font-family: Godo, Arial, sans-serif;
    margin: 0;
@@ -63,6 +68,9 @@
             
   }
   
+  span.emoji{
+  font-family: NotoEmoji, Arial, sans-serif;
+  }
   
   
   .content::-webkit-scrollbar{
@@ -121,16 +129,16 @@
 	padding: 15px 50px;
     height:100px;
   }
-  .footer h2{
+  .footer h1{
   	font-weight:bold;
   	font-size: 28px;
-    color:#003322;
+    color:#f0fff8;
     margin:5px 0px;
   }
-  .footer h3{
+  .footer h2{
   	font-weight:normal;
   	font-size: 20px;
-    color:#111111;
+    color:#f8f8f8;
 	margin:5px 0px;
   }
   
@@ -149,7 +157,7 @@
 
 <h1>Chanwoo Park's Page</h1>
 
-<h2> About </h2>
+<h2> <span class="emoji">🎓</span> About </h2>
 <div class="imgContainer">
 <img src="img/face.png" style="width:250px;height:250px;">
 </div>
@@ -160,9 +168,9 @@
 <div class="line"></div>
 <div class="block">
 
-<h2> Affiliation </h2>
+<h2> <span class="emoji">🏛</span> Affiliation </h2>
 <div class="imgContainer">
-<img src="img/dgist.jpg" style="width:400px;height:300px;">
+<img src="img/dgist.png" style="width:400px;height:300px;">
 </div>
 <h3>Daegu Gyeongbuk Institute of Science & Technology, Electrical Engineering & Computer Science, Integrated MS & Ph.D Course
 </h3>
@@ -171,7 +179,7 @@
 </div>
 <div class="line"></div>
 <div class="block">
-<h2> Publications </h2>
+<h2> <span class="emoji">📖</span> Publications </h2>
 <h3> 
 Exploring Intervention Techiques to Alleviate Negative Emotions during Video Content Moderation Tasks as a Worker-centered Task Design
 </h3>
@@ -182,8 +190,8 @@ Exploring Intervention Techiques to Alleviate Negative Emotions during Video Con
 </div>
 </div>
 <div class="footer">
-<h2> Contect </h2>
-<h3> bcw6622@dgist.ac.kr </h3>
+<h1> <span class="emoji">📞</span> Contect </h1>
+<h2> bcw6622@dgist.ac.kr </h2>
 </div>
 </div>
 </body>
