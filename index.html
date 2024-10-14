@@ -31,7 +31,7 @@
   .sidebarContainer {
     background-color: #ffffff;
     color: #111111;
-    width: 40px;
+    width: 60px;
     padding: 0px;
     box-shadow: -5px 0 #00aa99 inset;
 
@@ -44,14 +44,45 @@
   	flex: 1;
     background-color: #88ffdd;
     color: #111111;
-    width: 30px;
-    padding:0px;
+    width: 50px;
+    padding:10px 0px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
   }
+  
+  .sidebar div{
+    width: 40px;
+    height: 35px;
+	line-height: 35px;
+	text-align:center;
+	font-weight:bold;
+  	font-size: 28px;
+    color:#003322;
+	
+  }
+  .sidebar div .balloon{
+
+  white-space:nowrap;
+  border-radius:5px;
+	position: relative;
+	height: 25px;
+	width:max-content;
+	background: #00aa99ee;
+	padding: 5px;
+	bottom: 40px;
+	left: 60px;
+	font-size: 20px;
+	line-height: 25px;
+	opacity : 0;
+	transition: opacity 0.3s;
+  }
+  .sidebar div:hover .balloon{
+	opacity : 1;
+  }
+  
   
   .contentContainer{
   	flex: 1;
@@ -174,12 +205,48 @@
   }
   
 </style>
+<script type="text/javascript">
+function ready() {
+	let btn = document.querySelectorAll('.sidebar>div')
+	
+	for (let i = 0; i < btn.length; i++) {
+		btn[i].addEventListener('click',function(event){
+			let target = event.target;
+			console.log(target)
+			let btn2 = document.querySelectorAll('.sidebar>div>span')
+			console.log(btn2)
+			let btngo = document.querySelectorAll('.content>.block>h2')
+			for (let i = 0; i < btn2.length; i++){
+				console.log(target, btn2[i])
+				if (target==btn2[i]){
+					 document.querySelector('.content').scrollTo({left:0, top:btngo[i].offsetTop - 10})
+					console.log("ok")
+					break
+				}
+			} 
+		})
+	}
+	console.log("aaa")
+}
+document.addEventListener("DOMContentLoaded", ready);
+</script>
 </head>
 <body>
 
 <div class="sidebarContainer">
 <div class="sidebar">
-
+<div>
+<span class="emoji">🎓</span>
+<div class="balloon">About</div>
+</div>
+<div>
+<span class="emoji">🏛</span>
+<div class="balloon">Affiliation</div>
+</div>
+<div>
+<span class="emoji">📖</span>
+<div class="balloon">Publications</div>
+</div>
 </div>
 </div>
 <div class="contentContainer">
